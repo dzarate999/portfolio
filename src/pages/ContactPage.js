@@ -2,18 +2,17 @@ import React from 'react';
 
 import FormContent from '../components/FormContent';
 import Hero from '../components/Hero';
-import Content from '../components/Content';
+import Container from 'react-bootstrap/Container';
 
-function ContactPage(props) {
-
-    return(
-        <div>
-            <Hero title={props.title} />
-            <Content>
-                <FormContent />
-            </Content>
-        </div>
-    );
+function ContactPage (props) {
+  return (
+    <div>
+      <Hero title={props.title} />
+      <Container className='p-5'>
+        <FormContent />
+      </Container>
+    </div>
+  );
 }
 
 export default ContactPage;
