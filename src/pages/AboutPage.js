@@ -3,15 +3,18 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 import Hero from '../components/Hero';
+import Container from 'react-bootstrap/Container';
 
 function AboutPage (props) {
   return (
-    <div>
+    <Container fluid={true}>
+      <div>
       <Hero title={props.title} subTitle={props.subTitle} />
-
-      <Row className="justify-content-md-center">
-        <Col xs='0' lg='2' />
-        <Col xs lg='4'>
+      </div>
+      <div>
+      <Row className="justify-content-center">
+        <Col xs="0" lg="2" />
+        <Col xs lg="4">
           <p>
             I currently reside in Prosper, TX which is a bit north of Dallas. I help clients take a dream in their head and implement it in reality. I specialize in taking a complex and length processes and breaking it down into smaller parts. In my spare time, I’m either at the gym, rough housing with my three dogs, or playing trivia with my wife and friends.
           </p>
@@ -22,9 +25,10 @@ function AboutPage (props) {
           <p>
             I am self-taught and forever learning in the ways of graphic design, web design, and functional programming. I use all of Adobe’s tools with all of YouTube’s videos to expand upon my love of design. I have a passion for learning, and I have a passion for the arts.
           </p>
+          
         </Col>
-        <Col md='1' />
-        <Col xs lg='auto'>
+        <Col md="1" />
+        <Col xs lg="auto">
           <h3 className="display-5 font-weight-light">SKILLS</h3>
           <p>
             <span>- Project Manager</span>
@@ -52,10 +56,10 @@ function AboutPage (props) {
             <span>- Table Top Games</span>
           </p>
         </Col>
-        <Col xs='0' lg='2' />
+        <Col xs="0" lg="2" />
       </Row>
-
-    </div>
+      </div>
+    </Container>
   );
 }
 
