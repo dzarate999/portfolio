@@ -26,28 +26,34 @@
 }
 
 .success-msg {
-    color: #57a773;
-    padding: 10px 15px;
+  color: #57a773;
+  padding: 10px 15px;
 }
 
 .err-msg {
-    color: #ee6352;
-    padding: 10px 15px;
+  color: #ee6352;
+  padding: 10px 15px;
 }
 
 .bg-black {
-  background-color: #0D0D0D;
+  background-color: #0d0d0d;
 }
 
 .navbar-brand {
-  color: #6CD992 !important;
+  color: #6cd992 !important;
 }
 
 h1 {
-  color: #04BF20;
+  color: #04bf20;
 }
 
 h3 {
-  color: #84D9A2;
+  color: #84d9a2;
 }
 
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
