@@ -34,3 +34,20 @@
     color: #ee6352;
     padding: 10px 15px;
 }
+
+.bg-black {
+  background-color: #0D0D0D;
+}
+
+.navbar-brand {
+  color: #6CD992 !important;
+}
+
+h1 {
+  color: #04BF20;
+}
+
+h3 {
+  color: #84D9A2;
+}
+

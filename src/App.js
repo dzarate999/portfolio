@@ -28,6 +28,7 @@ class App extends React.Component {
       },
       about: {
         title: 'About Me',
+        subTitle: 'I\'m a project manager and digital designer focused on UI/UX.'
       },
       contact: {
         title: "Let's Talk",
@@ -39,7 +40,7 @@ class App extends React.Component {
     return (
       <Router>
         <Container className="p-0" fluid={true}>
-          <Navbar className="border-bottom" bg='transparent' expand='lg'>
+          <Navbar className="border-bottom" bg='black' expand='lg' variant='dark'>
             <Navbar.Brand>Daniel Zarate</Navbar.Brand>
             <Navbar.Toggle className ='border-0' aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
@@ -52,7 +53,7 @@ class App extends React.Component {
           </Navbar>
 
           <Route path='/' exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
-          <Route path='/about' exact render={()  => <AboutPage title={this.state.about.title} />} />
+          <Route path='/about' exact render={()  => <AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} />} />
           <Route path='/contact' exact render={() => <ContactPage title={this.state.contact.title} />} />
 
           <Footer />
