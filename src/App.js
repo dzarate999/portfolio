@@ -11,8 +11,9 @@ import ContactPage from './pages/ContactPage';
 import ResumePage from './pages/ResumePage';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super (props);
+    
     this.state = {
       title: 'Daniel Zarate',
       headerLinks: [
@@ -28,8 +29,7 @@ class App extends React.Component {
       },
       about: {
         title: 'About Me',
-        subTitle:
-          "I'm a project manager and digital designer focused on UI/UX.",
+        subTitle: "I'm a project manager and digital designer focused on UI/UX.",
       },
       contact: {
         title: "Let's Talk",
@@ -37,7 +37,7 @@ class App extends React.Component {
     };
   }
 
-  render() {
+  render () {
     return (
       <div className="body">
         <Router>
@@ -47,6 +47,7 @@ class App extends React.Component {
               bg="black"
               expand="lg"
               variant="dark"
+              collapseOnSelect
             >
               <Navbar.Brand>Daniel Zarate</Navbar.Brand>
               <Navbar.Toggle
@@ -55,15 +56,15 @@ class App extends React.Component {
               />
               <Navbar.Collapse id="navbar-toggle">
                 <Nav className="ml-auto">
-                  <Link className="nav-link" to="/">
-                    Home
-                  </Link>
-                  <Link className="nav-link" to="/about">
-                    About
-                  </Link>
-                  <Link className="nav-link" to="/contact">
-                    Contact
-                  </Link>
+                    <Nav.Link eventKey="1" className="nav-link" as={Link} to="/">
+                      Home
+                    </Nav.Link>
+                    <Nav.Link eventKey="2" className="nav-link" as={Link} to="/about">
+                      About
+                    </Nav.Link>
+                    <Nav.Link eventKey="3" className="nav-link" as={Link} to="/contact">
+                      Contact
+                    </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
