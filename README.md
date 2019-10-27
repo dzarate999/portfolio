@@ -20,6 +20,7 @@ CSS for media queries to handle mobile font sizes
 Align forms with headers
 
 Mobile menu collapses on page click
+--Menu now collapses when you click a page, but it doesn't collapse when you click off the menu. The fix was to change Link tags to Nav.Link tags, and pass the Link tag through the "as" prop. You also needed to assign an event key to each.
 
 Replace fav icon
 --Fav icon replaced and adjused json file
