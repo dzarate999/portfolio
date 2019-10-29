@@ -131,3 +131,13 @@ canvas {
   right: 36.5%;
   transform: translate(-50%, 0);
 }
+
+@media (max-width: 570px) {
+  h1 {
+    font-size: 16vw !important;
+  }
+  h3 {
+    font-size: 10vw !important;
+  }
+}
+

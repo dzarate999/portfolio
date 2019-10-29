@@ -16,6 +16,7 @@ Removed .vscode file without deleting the local file.
 Update card from onClick to hover effect. Show info on top of the card with an opacity overlay
 
 CSS for media queries to handle mobile font sizes
+--Added media query so the h1 and h3 tags scalled correctly. Had some issues getting it to work well with react bootstrap, but forcing the CSS with the !important tag worked
 
 Align forms with headers
 
