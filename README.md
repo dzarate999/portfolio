@@ -14,6 +14,7 @@ Removed .vscode file without deleting the local file.
 --Did this using "git rm -r --cached .vscode" from there, I pushed the repo again. This was successful. 
 
 Update card from onClick to hover effect. Show info on top of the card with an opacity overlay
+--Opted out of this suggestion only because I want to show my ability to handle onClick events. 
 
 CSS for media queries to handle mobile font sizes
 --Added media query so the h1 and h3 tags scalled correctly. Had some issues getting it to work well with react bootstrap, but forcing the CSS with the !important tag worked
