@@ -7,7 +7,11 @@ import Container from 'react-bootstrap/Container';
 function ContactPage (props) {
   return (
     <div>
-      <Hero title={props.title} />
+      <Hero 
+        title={props.title} 
+        class={props.class} 
+        
+      />
       <Container className='p-5'>
         <FormContent />
       </Container>
