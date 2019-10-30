@@ -33,6 +33,7 @@ class App extends React.Component {
       },
       contact: {
         title: "Let's Talk",
+        class: "contact-form",
       },
     };
   }
@@ -93,7 +94,12 @@ class App extends React.Component {
             <Route
               path="/contact"
               exact
-              render={() => <ContactPage title={this.state.contact.title} />}
+              render={() => (
+                <ContactPage 
+                  title={this.state.contact.title}
+                  class={this.state.contact.class} 
+                />
+              )}
             />
             <Route path="/resume" exact render={() => <ResumePage />} />
 

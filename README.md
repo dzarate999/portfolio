@@ -19,6 +19,7 @@ CSS for media queries to handle mobile font sizes
 --Added media query so the h1 and h3 tags scalled correctly. Had some issues getting it to work well with react bootstrap, but forcing the CSS with the !important tag worked
 
 Align forms with headers
+--Headers are defined in the App.js to demonstrate passing props from different files. To align the headed in contacts with the form, I passed a unique class 'contact-form' from App.js to the contact page. From there, I used CSS to ajust that class when in mobile (cell phone) view.
 
 Mobile menu collapses on page click
 --Menu now collapses when you click a page, but it doesn't collapse when you click off the menu. The fix was to change Link tags to Nav.Link tags, and pass the Link tag through the "as" prop. You also needed to assign an event key to each.
