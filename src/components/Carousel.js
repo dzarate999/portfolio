@@ -25,9 +25,9 @@ class Carousel extends React.Component {
                 {
                     id: 1,
                     title: 'Daniel Zarate',
-                    subTitle: 'YouTube channel **this needs to change**',
+                    subTitle: 'Resume',
                     imgSrc: me,
-                    link: 'https://www.youtube.com/channel/UCUafAlnsz0DVXYKZYyxhtCA?view_as=subscriber',
+                    link: '/resume',
                     selected: false
                 },
                 {
